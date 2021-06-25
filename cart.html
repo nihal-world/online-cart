@@ -33,37 +33,78 @@
                     <img src="images/menu.jpg" class="menu-icon"onclick="menutoggle()">
             </div>
         </div>
-        <!------------------------account-page-------->
-        <div class="account-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/image1.jpg" width="100%">
-                    </div>
-                    <div class="col-2">
-                        <div class="form-container">
-                            <div class="form-btn">
-                                <span onclick="login">Login</span>
-                                <span onclick="register">Register</span>
-                                <hr id="Indicator">
-                            </div>
-                                 <form id="loginForm">
-                                     <input type="text" placeholder="Username">
-                                     <input type="password" placeholder="password">
-                                     <button type="submit" class="btn">Login</button>
-                                     <a href="">Forgot password</a>
-                                 </form>
-                                 <form id="regForm">
-                                    <input type="text" placeholder="Username">
-                                    <input type="email" placeholder="Email">
-                                    <input type="password" placeholder="password">
-                                    <button type="submit" class="btn">Register</button>
-                                </form>
-                        </div>
-                    </div>
+ <!--------------------------cart items---------------------->  
+ <div class="small-container cart-page"></div>
+ <table>
+     <tr>
+         <th>Product</th>
+         <th>Quantity</th>
+         <th>sub total</th>
+     </tr>
+     <tr>
+         <td>
+             <div class="cart-info">
+                 <img src="images/buy-1.jpg">
+                 <div>
+                     <p>Pattern colored Ear Bud</p>
+                     <small>Price:$1500</small>
+                     <br>
+                     <a href="">Remove</a>
+                 </div>
+             </div>
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>$1500</td>
+     </tr>
+     <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/buy-2.jpg">
+                <div>
+                    <p>Pattern colored Ear Bud</p>
+                    <small>Price:$2500</small>
+                    <br>
+                    <a href="">Remove</a>
                 </div>
             </div>
-        </div>   
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$2500</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/buy-3.jpg">
+                <div>
+                    <p>Pattern colored Ear Bud</p>
+                    <small>Price:$1000</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$1000</td>
+    </tr>
+ </table>   
+ 
+ <div class="total-price">
+     <table>
+         <tr>
+             <td>Subtotal</td>
+             <td>$5000</td>
+         </tr>
+         <tr>
+            <td>Tax</td>
+            <td>$40</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>$5040</td>
+        </tr>
+     </table>
+ </div>
+    
 <!------------------------------footer----------------->
 
 
@@ -120,30 +161,6 @@
         }
     }
    </script>
-
-<!-------------------------JS for toggle  form------------>
-<script>
-    var LoginForm=document.getElementById("LoginForm");
-    var RegForm=document.getElementById("RegForm");
-    var Indicator=document.getElementById("Indicator");
- 
-          function register(){
-              RegForm.style.transform="translateX(0px)";
-             LoginForm.style.transform="translateX(0px)";
-             Indicator.style.transform="translateX(100px)";
-
-          }
-          function login(){
-              RegForm.style.transform="translateX(300px)";
-             LoginForm.style.transform="translateX(300px)";
-             Indicator.style.transform="translateX(0px)";
-
-          }
-
-
-</script>
-
-
 
 
 </body>

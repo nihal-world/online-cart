@@ -447,6 +447,7 @@ th:last-child{
     padding: 20px 0;
     margin: auto;
     box-shadow: rgb(0, 0, 0,0.1);
+    overflow: hidden;
 }
 .form-container span{
     font-weight: bold;
@@ -482,23 +483,24 @@ form .btn{
 form .btn:focus{
     outline: none;
 }
-#loginform{
+#loginForm{
     left: -300px;
 
 }
-#regform{
+#regForm{
     left: 0;
 }
 form a{
     font-size: 12px;
 }
-#indicator{
+#Indicator{
     width: 100px;
     border:none;
     background: #ff523b;
     height: 3px;
     margin-top:8px ;
     transform: rotateX(100px);
+    transition: transform 1s;
 }
 
 
