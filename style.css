@@ -84,7 +84,10 @@ p{
     margin-bottom:30px;
 }
 .col-3 img{
-    width: 100%;
+    width: 33.33%;
+    float:left;
+    padding:5px;
+    
 }
 .small-container{
     max-width: 1080px;
@@ -104,7 +107,7 @@ p{
 }
 .title{
     text-align: center;
-    margin: 0 auto 80px;
+    margin: 50% auto 80px;
     position:relative;
     line-height: 60px;
     color:rgb(0, 0, 0)
